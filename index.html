@@ -11,10 +11,31 @@
 <body>
 
     <script>
-        const userFirst = Number(prompt("Number first"));
+        /* const userFirst = Number(prompt("Number first"));
         const userSecond = Number(prompt("Number second"));
 
-        alert((userFirst + userSecond) + " " + (userFirst - userSecond) + " " + (userFirst * userSecond) + " " + (userFirst / userSecond));
+        alert((userFirst + userSecond) + " " + (userFirst - userSecond) + " " + (userFirst * userSecond) + " " + (userFirst / userSecond));*/
+        
+        const money = +prompt("Hisobingizdagi pulni kiriting");
+
+            const USD = 9433;
+            const EUR = 10354;
+
+            const HOTEL_EXPENCES = 250;
+            const TICKET = 500;
+            const ENTERTAINMENT = 120;
+
+            const expencesUzs = ((HOTEL_EXPENCES + TICKET) * USD + ENTERTAINMENT * EUR);
+            
+            if (expencesUzs <= money) {
+                alert("Oq yo'l,Alisher!");
+            }
+            else if (money < 0) {
+                alert("Bizni axmoq qilmang!");
+            }
+            else {
+                alert("Ozgina sabr qilish kerak ekan Alisher!");
+            }
     </script>
 
 </body>
